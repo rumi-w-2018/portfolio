@@ -1,0 +1,30 @@
+.header {
+  height: 50vh;
+
+  background: $color-primary-dark;
+  background-image: linear-gradient(
+    to right,
+    $color-primary,
+    $color-primary-dark,
+    $color-primary
+  );
+  position: relative;
+
+  @include respond(tab-land) {
+    height: 40vh;
+  }
+
+  &__text-box {
+    //with absolute, postion(eg. top, left) from the reference = parent element which has 'relative' postion
+    //--> set position of header = relative
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    @include respond(tab-land) {
+      top: 30%;
+    }
+  }
+}

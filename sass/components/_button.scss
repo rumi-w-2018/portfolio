@@ -1,0 +1,23 @@
+#btn__github {
+  display: block;
+
+  margin-left: 2rem;
+  padding: 1px;
+
+  height: 4.4rem;
+  width: 4.4rem;
+  background-color: black;
+  background: url("../img/GitHub-Mark-32px.png") no-repeat;
+  background-size: 38px 38px;
+
+  cursor: pointer;
+  transition: all 0.2s;
+
+  @media only screen and (min-width: 56.26em) {
+    margin-top: 1.8rem;
+  }
+}
+
+#btn__github:hover {
+  transform: scale(1.1);
+}

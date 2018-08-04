@@ -1,0 +1,130 @@
+.project {
+  animation: faseIn 1s ease-in;
+
+  .project-box {
+    min-height: 42rem;
+    min-width: 5rem;
+    padding: $padding-medium;
+    font-size: $font-size-default;
+
+    background-color: $color-gray-light-1;
+    border-radius: 1rem;
+    box-shadow: 0.7rem 0.7rem 1.2rem rgba($color-gray-dark-2, 0.8);
+
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      font-size: $font-size-xlarge;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &__image {
+      height: 100%;
+    }
+
+    &__link-sm {
+      font-size: $font-size-default;
+      font-weight: 500;
+      @include respond(tab-port) {
+        font-size: $font-size-xxlarge;
+      }
+    }
+
+    &__img-wrap {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10%;
+      height: 20rem;
+      width: 20rem;
+
+      border: 1px solid rgba($color-gray-dark-1, 0.3);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0.6rem 0.6rem 1rem rgba($color-gray-dark-2, 0.6);
+
+      &::after {
+        content: "";
+        height: 20rem;
+        width: 20rem;
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-gray-light-1, 1),
+          rgba($color-gray-dark-1, 1)
+        );
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.project--work {
+  animation: faseIn 1s ease-in;
+
+  .project-box {
+    min-height: 38rem;
+    min-width: 5rem;
+    padding: $padding-medium;
+    font-size: $font-size-default;
+
+    background-image: linear-gradient(
+      to right,
+      $color-gray-light-1,
+      $color-gray-dark-2
+    );
+
+    border-radius: 1rem;
+    box-shadow: 0.7rem 0.7rem 1.2rem rgba($color-gray-dark-2, 0.8);
+
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      font-size: $font-size-xlarge;
+    }
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    &__image {
+      height: 100%;
+    }
+
+    &__img-wrap {
+      display: block;
+      margin: 0 auto;
+      border-radius: 10%;
+      height: 18rem;
+      width: 20rem;
+
+      border: 1px solid rgba($color-gray-dark-1, 0.3);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0.6rem 0.6rem 1rem rgba($color-gray-dark-3, 0.8);
+
+      &::after {
+        content: "";
+        height: 18rem;
+        width: 20rem;
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($color-gray-light-1, 1),
+          rgba($color-gray-dark-1, 1)
+        );
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.2;
+      }
+    }
+  }
+}
