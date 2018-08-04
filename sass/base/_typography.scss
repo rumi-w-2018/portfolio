@@ -79,8 +79,10 @@ body {
 }
 
 a:link,
-a:visited {
+a:visited,
+a:active {
   text-decoration: none;
+  color: $color-primary-medium;
 }
 
 a:hover {

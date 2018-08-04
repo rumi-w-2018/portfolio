@@ -3,6 +3,7 @@
 $color-primary-light: #ccffff;
 $color-primary: #1cb5e0;
 $color-primary-medium: #000080;
+$color-primary-medium: rgb(0, 0, 128);
 $color-primary-dark: #000046;
 
 $color-secondary: #ffff80;
@@ -23,7 +24,8 @@ $color-white: #fff;
 $color-black: #000;
 
 // Row & Grid
-$row-width: 114rem; // 1140px is standard for row.
+//$row-width: 114rem; // 1140px is standard for row.
+$row-width: 126rem; // 1200px is standard for row.
 
 // Paddings
 $padding-xsmall: 1rem;
@@ -38,7 +40,8 @@ $gutter-vertical-medium-2: 7rem;
 $gutter-vertical-large: 8.5rem;
 $gutter-vertical-exlarge: 10rem;
 
-$gutter-horizontal: 6rem;
+//$gutter-horizontal-lg: 6rem;
+$gutter-horizontal: 3rem;
 
 // Font size
 $font-size-default: 1.5rem;
