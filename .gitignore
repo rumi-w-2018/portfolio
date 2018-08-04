@@ -1,3 +1,6 @@
+# CSS intermediate
+/css/style.*.css
+
 # dependencies
 /node_modules
 
